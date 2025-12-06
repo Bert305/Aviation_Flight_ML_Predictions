@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ML Models (too large for GitHub)
+backend/models/*.pkl
+backend/models/*.joblib
+
+# CSV Data files (optional - uncomment if data files are too large)
+# backend/*.csv
