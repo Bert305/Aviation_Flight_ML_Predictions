@@ -201,7 +201,11 @@ class AviationMLModels:
             'linear_regression_rmse': rmse_linear,
             'random_forest_rmse': rmse_rf,
             'feature_importance': dict(zip(feature_columns, 
-                                          self.random_forest_regressor.feature_importances_))
+                                          self.random_forest_regressor.feature_importances_)),
+            'X_test': X_test,
+            'y_test': y_test,
+            'y_pred_linear': y_pred_linear,
+            'y_pred_rf': y_pred_rf
         }
     
     def predict(self, input_data):

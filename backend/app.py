@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_file
 from flask_cors import CORS
 import pandas as pd
 import numpy as np
@@ -349,6 +349,18 @@ def model_performance():
                     'Country': 0.02
                 }
             })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/plots/<plot_name>')
+def get_plot(plot_name):
+    """Serve generated plot images"""
+    try:
+        plot_path = f'models/plots/{plot_name}.png'
+        if os.path.exists(plot_path):
+            return send_file(plot_path, mimetype='image/png')
+        else:
+            return jsonify({'error': 'Plot not found'}), 404
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 

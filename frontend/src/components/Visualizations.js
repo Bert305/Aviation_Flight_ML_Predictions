@@ -46,6 +46,15 @@ function Visualizations() {
     }
   };
 
+  const downloadPlot = (plotName, filename) => {
+    const link = document.createElement('a');
+    link.href = `http://localhost:5000/api/plots/${plotName}`;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   if (loading) {
     return <div className="loading">Loading visualizations...</div>;
   }
@@ -212,6 +221,44 @@ function Visualizations() {
         <>
           <div className="chart-container">
             <h2>🤖 Machine Learning Model Performance</h2>
+            <div style={{ marginBottom: '1rem', display: 'flex', gap: '1rem' }}>
+              <button 
+                onClick={() => downloadPlot('classifier_feature_importance', 'classifier_feature_importance.png')}
+                style={{
+                  padding: '0.75rem 1.5rem',
+                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                  fontSize: '0.9rem',
+                  transition: 'transform 0.2s',
+                }}
+                onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+                onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+              >
+                📊 Download Classifier Plot
+              </button>
+              <button 
+                onClick={() => downloadPlot('regressor_comparison', 'regressor_comparison.png')}
+                style={{
+                  padding: '0.75rem 1.5rem',
+                  background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                  fontSize: '0.9rem',
+                  transition: 'transform 0.2s',
+                }}
+                onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+                onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+              >
+                📈 Download Regressor Plot
+              </button>
+            </div>
             <div style={{ padding: '2rem' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
                 {/* Random Forest Classifier */}
@@ -391,6 +438,54 @@ function Visualizations() {
                     Score = (Fatal × 3) + (Serious × 2) + (Minor × 1)
                   </span>
                 </p>
+                
+                {/* Prediction Visualization Buttons */}
+                <div style={{ 
+                  display: 'flex', 
+                  gap: '1rem', 
+                  marginBottom: '1.5rem',
+                  flexWrap: 'wrap'
+                }}>
+                  <button
+                    onClick={() => downloadPlot('linear_regression_predictions', 'linear_regression_predictions.png')}
+                    style={{
+                      padding: '0.75rem 1.5rem',
+                      background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '8px',
+                      cursor: 'pointer',
+                      fontWeight: 'bold',
+                      fontSize: '0.95rem',
+                      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                      transition: 'transform 0.2s',
+                    }}
+                    onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+                    onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+                  >
+                    📊 View Linear Regression Predictions
+                  </button>
+                  
+                  <button
+                    onClick={() => downloadPlot('random_forest_predictions', 'random_forest_predictions.png')}
+                    style={{
+                      padding: '0.75rem 1.5rem',
+                      background: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '8px',
+                      cursor: 'pointer',
+                      fontWeight: 'bold',
+                      fontSize: '0.95rem',
+                      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                      transition: 'transform 0.2s',
+                    }}
+                    onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+                    onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+                  >
+                    📈 View Random Forest Predictions
+                  </button>
+                </div>
                 {targetDistributions.severity_scores && targetDistributions.severity_scores.length > 0 ? (
                   targetDistributions.severity_scores.map((item, index) => {
                     const total = targetDistributions.severity_scores.reduce((sum, i) => sum + (i.count || 0), 0);
