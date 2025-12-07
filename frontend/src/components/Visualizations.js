@@ -50,12 +50,7 @@ function Visualizations() {
   };
 
   const downloadPlot = (plotName, filename) => {
-    const link = document.createElement('a');
-    link.href = `http://localhost:5000/api/plots/${plotName}`;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open(`http://localhost:5000/api/plots/${plotName}`, '_blank');
   };
 
   const loadPredictionSamples = async () => {
