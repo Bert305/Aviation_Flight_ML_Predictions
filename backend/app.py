@@ -407,7 +407,8 @@ def get_real_flights():
         
         # Fetch live flights from AviationStack API
         # Using flights endpoint to get real-time flight data
-        url = f'http://api.aviationstack.com/v1/flights?access_key={api_key}&limit=20'
+        # Attempt to filter for US flights only (dep_iata for departure country or arr_iata for arrival country)
+        url = f'http://api.aviationstack.com/v1/flights?access_key={api_key}&limit=50&flight_status=active&dep_country=US'
         
         response = requests.get(url, timeout=10)
         
