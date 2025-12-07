@@ -205,8 +205,11 @@ def accidents_by_location():
     if airline_accidents is None:
         return jsonify({'error': 'Failed to load data'}), 500
     
+    # Filter out empty/null country values
+    valid_countries = airline_accidents[airline_accidents['Country'].notna() & (airline_accidents['Country'].str.strip() != '')]
+    
     # Group by country
-    location_stats = airline_accidents.groupby('Country').agg({
+    location_stats = valid_countries.groupby('Country').agg({
         'Event Id': 'count',
         'Total Fatal Injuries': 'sum'
     }).reset_index().sort_values('Event Id', ascending=False).head(20)
