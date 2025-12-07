@@ -250,6 +250,18 @@ class AviationMLModels:
             severity_proba = self.random_forest_classifier.predict_proba(X)[0]
             confidence = float(np.max(severity_proba) * 100)
             
+            # Get class labels and probabilities
+            class_labels = self.random_forest_classifier.classes_
+            class_probabilities = [
+                {
+                    'class': str(label),
+                    'probability': round(float(prob) * 100, 2)
+                }
+                for label, prob in zip(class_labels, severity_proba)
+            ]
+            # Sort by probability descending
+            class_probabilities.sort(key=lambda x: x['probability'], reverse=True)
+            
             # Predict severity score
             severity_score = float(self.random_forest_regressor.predict(X)[0])
             
@@ -273,7 +285,8 @@ class AviationMLModels:
                 'risk_level': risk_level,
                 'risk_score': risk_score,
                 'delay_prediction': delay_prediction,
-                'confidence': round(confidence, 2)
+                'confidence': round(confidence, 2),
+                'class_probabilities': class_probabilities
             }
         except Exception as e:
             return {

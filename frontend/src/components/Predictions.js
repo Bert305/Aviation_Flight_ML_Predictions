@@ -308,6 +308,53 @@ function Predictions() {
               </div>
             </div>
 
+            {/* Class Probabilities Breakdown */}
+            {prediction.prediction?.class_probabilities && prediction.prediction.class_probabilities.length > 0 && (
+              <div style={{ 
+                marginTop: '2rem', 
+                padding: '1.5rem', 
+                background: 'rgba(255,255,255,0.1)',
+                borderRadius: '8px'
+              }}>
+                <h4 style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
+                  📊 Severity Class Probabilities
+                </h4>
+                <p style={{ fontSize: '0.85rem', opacity: 0.8, marginBottom: '1rem' }}>
+                  Breakdown of predicted probabilities for each severity category
+                </p>
+                
+                {prediction.prediction.class_probabilities.map((item, index) => (
+                  <div key={index} style={{ marginBottom: '0.75rem' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.3rem' }}>
+                      <span style={{ fontWeight: 'bold', fontSize: '0.95rem' }}>{item.class}</span>
+                      <span style={{ fontWeight: 'bold', fontSize: '0.95rem' }}>{item.probability}%</span>
+                    </div>
+                    <div style={{ 
+                      width: '100%', 
+                      height: '8px', 
+                      background: 'rgba(255,255,255,0.2)',
+                      borderRadius: '4px',
+                      overflow: 'hidden'
+                    }}>
+                      <div style={{
+                        width: `${item.probability}%`,
+                        height: '100%',
+                        background: index === 0 
+                          ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+                          : item.class.includes('Fatal')
+                          ? 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+                          : item.class === 'Non-Fatal'
+                          ? 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+                          : 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+                        transition: 'width 0.3s ease',
+                        borderRadius: '4px'
+                      }}></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
             <div style={{ 
               marginTop: '1.5rem', 
               padding: '1rem', 
