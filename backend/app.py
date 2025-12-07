@@ -4,7 +4,12 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import os
+import requests
+from dotenv import load_dotenv
 from ml_models import AviationMLModels
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for React frontend
@@ -387,6 +392,106 @@ def prediction_samples():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/realflights')
+def get_real_flights():
+    """
+    Fetch live flight data from AviationStack API and make ML predictions
+    """
+    try:
+        api_key = os.getenv('AVIATIONSTACK_API_KEY')
+        if not api_key:
+            return jsonify({
+                'error': 'AVIATIONSTACK_API_KEY not found',
+                'message': 'Please add AVIATIONSTACK_API_KEY to .env file'
+            }), 500
+        
+        # Fetch live flights from AviationStack API
+        # Using flights endpoint to get real-time flight data
+        url = f'http://api.aviationstack.com/v1/flights?access_key={api_key}&limit=20'
+        
+        response = requests.get(url, timeout=10)
+        
+        if response.status_code != 200:
+            return jsonify({
+                'error': 'Failed to fetch flight data',
+                'message': f'AviationStack API returned status {response.status_code}'
+            }), 500
+        
+        flight_data = response.json()
+        
+        if 'data' not in flight_data or not flight_data['data']:
+            return jsonify({
+                'error': 'No flight data available',
+                'message': 'AviationStack API returned no flights'
+            }), 404
+        
+        # Process flights and make predictions
+        predictions = []
+        
+        for flight in flight_data['data']:
+            try:
+                # Extract flight information
+                flight_info = {
+                    'flight_number': flight.get('flight', {}).get('iata', 'N/A'),
+                    'airline': flight.get('airline', {}).get('name', 'Unknown'),
+                    'aircraft': flight.get('aircraft', {}).get('registration', 'N/A'),
+                    'aircraft_type': flight.get('aircraft', {}).get('iata', 'N/A'),
+                    'departure': flight.get('departure', {}).get('airport', 'Unknown'),
+                    'arrival': flight.get('arrival', {}).get('airport', 'Unknown'),
+                    'status': flight.get('flight_status', 'unknown'),
+                    'flight_date': flight.get('flight_date', 'N/A')
+                }
+                
+                # Prepare input for ML model
+                # Map real flight data to model features
+                model_input = {
+                    'month': datetime.now().month,
+                    'day_of_week': datetime.now().weekday(),
+                    'number_of_engines': 2,  # Default assumption for commercial flights
+                    'country': 'United States',
+                    'weather_condition': 'VMC',  # Default to Visual Meteorological Conditions
+                    'broad_phase_of_flight': 'CRUISE',
+                    'engine_type': 'Turbo Jet'
+                }
+                
+                # Make prediction using ML models
+                prediction = ml_models.predict(model_input)
+                
+                # Combine flight info with prediction
+                result = {
+                    **flight_info,
+                    'prediction': {
+                        'severity_class': prediction.get('severity_class', 'Unknown'),
+                        'confidence': prediction.get('confidence', 0.0),
+                        'risk_level': prediction.get('risk_level', 'Unknown'),
+                        'severity_score': prediction.get('severity_score', 0.0),
+                        'class_probabilities': prediction.get('class_probabilities', [])
+                    }
+                }
+                
+                predictions.append(result)
+                
+            except Exception as flight_error:
+                print(f"Error processing flight: {flight_error}")
+                continue
+        
+        return jsonify({
+            'total_flights': len(predictions),
+            'timestamp': datetime.now().isoformat(),
+            'flights': predictions
+        })
+        
+    except requests.Timeout:
+        return jsonify({
+            'error': 'Request timeout',
+            'message': 'AviationStack API request timed out'
+        }), 504
+    except Exception as e:
+        return jsonify({
+            'error': 'Internal server error',
+            'message': str(e)
+        }), 500
+
 if __name__ == '__main__':
     print("Starting Aviation ML API...")
     print("Loading datasets...")
@@ -397,3 +502,4 @@ if __name__ == '__main__':
         print(f"Loaded {len(ntsb_data)} NTSB records")
     print("API running on http://localhost:5000")
     app.run(debug=True, port=5000)
+

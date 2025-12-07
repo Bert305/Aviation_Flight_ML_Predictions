@@ -282,3 +282,272 @@
   background: #667eea;
   color: white;
 }
+
+/* Real Flights Styles */
+.real-flights-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.controls-section {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.fetch-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fetch-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.fetch-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auto-refresh-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.auto-refresh-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.timestamp-info {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: #718096;
+  font-style: italic;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 3rem;
+}
+
+.spinner {
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.flights-summary {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.flights-summary h3 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.flights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.flight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.flight-number {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.flight-date {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.flight-details {
+  margin-bottom: 1.5rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.detail-row .label {
+  color: #718096;
+  font-weight: 500;
+}
+
+.detail-row .value {
+  color: #2d3748;
+  font-weight: 600;
+  text-align: right;
+}
+
+.prediction-section {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.prediction-section h4 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.prediction-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.prediction-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.metric-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.severity-badge,
+.risk-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.confidence-value {
+  color: #667eea;
+}
+
+.probabilities-breakdown {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.probabilities-breakdown h5 {
+  color: #4a5568;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.probability-item {
+  margin-bottom: 0.75rem;
+}
+
+.probability-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.probability-class {
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.probability-value {
+  color: #2d3748;
+  font-weight: 700;
+}
+
+.probability-bar-container {
+  background: #e2e8f0;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.probability-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-data-message p {
+  color: #718096;
+  font-size: 1.1rem;
+}

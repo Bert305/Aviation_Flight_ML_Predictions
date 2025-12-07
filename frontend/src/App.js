@@ -4,6 +4,7 @@ import Dashboard from './components/Dashboard';
 import AccidentExplorer from './components/AccidentExplorer';
 import Predictions from './components/Predictions';
 import Visualizations from './components/Visualizations';
+import RealFlights from './components/RealFlights';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -18,6 +19,8 @@ function App() {
         return <Predictions />;
       case 'visualizations':
         return <Visualizations />;
+      case 'realflights':
+        return <RealFlights />;
       default:
         return <Dashboard />;
     }
@@ -54,6 +57,12 @@ function App() {
           onClick={() => setActiveTab('predictions')}
         >
           🎯 Predictions
+        </button>
+        <button 
+          className={activeTab === 'realflights' ? 'active' : ''} 
+          onClick={() => setActiveTab('realflights')}
+        >
+          🛫 Real Flights
         </button>
       </nav>
 

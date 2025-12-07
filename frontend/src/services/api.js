@@ -72,5 +72,14 @@ export const apiService = {
   getPredictionSamples: async () => {
     const response = await fetch(`${API_BASE_URL}/api/prediction-samples`);
     return response.json();
+  },
+
+  // Get real-time flights with predictions
+  getRealFlights: async () => {
+    const response = await fetch(`${API_BASE_URL}/api/realflights`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
   }
 };
