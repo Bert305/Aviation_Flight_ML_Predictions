@@ -7,7 +7,14 @@ A fullstack machine learning application for analyzing aviation safety data and 
 - **Interactive Dashboard**: Real-time statistics and overview of aviation accident data
 - **Accident Explorer**: Search and filter through historical accident records
 - **Data Visualizations**: Beautiful charts showing trends, distributions, and patterns
+  - Open plots in new browser tabs for detailed viewing
 - **ML Predictions**: Machine learning models for predicting flight safety risks
+  - Detailed severity class probability breakdowns with color-coded visualization
+  - View confidence scores and all possible outcomes
+- **Real Flights**: Live flight data integration with ML predictions
+  - Fetches real-time flights from AviationStack API
+  - Auto-refresh capability for continuous monitoring
+  - ML predictions on live commercial flights
 - **RESTful API**: Flask backend with comprehensive endpoints
 - **Modern UI**: React frontend with responsive design
 
@@ -24,6 +31,8 @@ A fullstack machine learning application for analyzing aviation safety data and 
 - **NumPy**: Numerical computing
 - **Scikit-learn**: Machine learning models
 - **Flask-CORS**: Cross-origin resource sharing
+- **Requests**: HTTP library for API calls
+- **Python-dotenv**: Environment variable management
 
 ### Frontend
 - **React**: UI framework
@@ -55,8 +64,11 @@ cp .env.example .env
 
 5. Add your API keys to `.env`:
 ```
-AVIATIONSTACK_API_KEY=your_key_here
+AVIATIONSTACK_API_KEY=your_aviationstack_key_here
+OPENAI_API_KEY=your_openai_key_here
 ```
+
+> **Note**: The `.env` file is automatically excluded from version control via `.gitignore` to protect your API keys.
 
 ### Frontend Setup
 
@@ -125,6 +137,16 @@ This will:
 ### Predictions
 - `POST /api/predict` - Make ML predictions
   - Body: Flight details (airline, aircraft, airports, weather, etc.)
+  - Returns: Severity class, confidence score, risk level, and full probability breakdown
+
+### Real Flights
+- `GET /api/realflights` - Fetch live flights with ML predictions
+  - Integrates with AviationStack API
+  - Returns: Real-time flight data with ML-generated risk predictions
+
+### Visualizations
+- `GET /api/plots/<plot_name>` - Retrieve ML visualization plots
+  - Opens in new browser tab for detailed viewing
 
 ## 🎯 ML Models
 
@@ -137,10 +159,16 @@ Predicts continuous severity scores based on:
 
 ### 2. Random Forest Classifier
 Classifies accident severity into categories:
-- Fatal
-- Serious
+- Fatal (multiple severity classes)
+- Incident
 - Minor
-- None
+- Non-Fatal
+
+**Enhanced Output:**
+- Primary severity class prediction
+- Confidence score (0-1 range, displayed as percentage)
+- Full probability breakdown for all severity classes
+- Color-coded visualization in UI
 
 ### 3. Random Forest Regressor
 Predicts numerical risk scores with feature importance analysis.
@@ -165,7 +193,16 @@ Predicts numerical risk scores with feature importance analysis.
 - **Dashboard.js**: Overview statistics and recent trends
 - **AccidentExplorer.js**: Searchable accident database
 - **Visualizations.js**: Interactive charts and graphs
+  - Plots open in new tabs for better viewing
+  - ML model performance visualizations
 - **Predictions.js**: ML prediction interface
+  - Manual flight data input
+  - Detailed probability breakdowns with progress bars
+  - Color-coded severity indicators
+- **RealFlights.js**: Live flight monitoring with ML predictions
+  - Auto-refresh toggle (2-minute intervals)
+  - Real-time flight cards with status badges
+  - Integrated ML predictions on live data
 
 ## 🔧 Project Structure
 
@@ -184,7 +221,13 @@ Aviation_Flight_ML_Predictions/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/           # React components
+│   │   │   ├── Dashboard.js
+│   │   │   ├── AccidentExplorer.js
+│   │   │   ├── Visualizations.js
+│   │   │   ├── Predictions.js
+│   │   │   └── RealFlights.js    # NEW: Live flight tracking
 │   │   ├── services/             # API service
+│   │   │   └── api.js
 │   │   ├── App.js                # Main app component
 │   │   └── App.css               # Styles
 │   ├── package.json              # Node dependencies
@@ -195,21 +238,36 @@ Aviation_Flight_ML_Predictions/
 ## 🌐 API Integration Ready
 
 The project is structured to integrate with:
-- **aviationstack.com**: Real-time flight data
-- **Weather API**: Weather conditions
-- **Tavily API**: Aviation news and context
-- **OpenAI API**: Natural language insights
+- **AviationStack API**: ✅ **INTEGRATED** - Real-time flight data for live predictions
+- **OpenAI API**: Ready for natural language insights and enhanced analysis
+- **Weather API**: Ready for weather conditions integration
+- **Tavily API**: Ready for aviation news and context
+
+## ✨ Recent Updates
+
+### v2.0 - Live Flight Integration (December 2025)
+- ✅ Added Real Flights tab with live flight tracking
+- ✅ Integrated AviationStack API for real-time flight data
+- ✅ ML predictions on live commercial flights
+- ✅ Auto-refresh capability for continuous monitoring
+- ✅ Enhanced prediction display with probability breakdowns
+- ✅ Fixed confidence score calculation (0-1 range)
+- ✅ Plot visualizations now open in new tabs
+- ✅ Color-coded severity and risk indicators
+- ✅ Environment variable management with python-dotenv
 
 ## 📈 Future Enhancements
 
-- [ ] Deploy trained ML models for real predictions
-- [ ] Integrate real-time flight data from aviationstack
-- [ ] Add weather API integration
+- [x] Deploy trained ML models for real predictions
+- [x] Integrate real-time flight data from aviationstack
+- [ ] Add US flight filtering capability
+- [ ] Integrate weather API for live conditions
 - [ ] Implement advanced visualizations (D3.js, Chart.js)
 - [ ] Add user authentication
 - [ ] Export reports and predictions
 - [ ] Mobile responsive improvements
 - [ ] Add more ML models (XGBoost, Neural Networks)
+- [ ] Historical flight tracking and analysis
 
 ## 🤝 Contributing
 
