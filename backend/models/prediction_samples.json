@@ -1,0 +1,2408 @@
+{
+  "feature_names": [
+    "Year",
+    "Month",
+    "DayOfWeek",
+    "Number of Engines",
+    "Country_encoded",
+    "Weather Condition_encoded",
+    "Broad Phase of Flight_encoded",
+    "Engine Type_encoded"
+  ],
+  "categories": {
+    "Non-Fatal": [
+      {
+        "index": 1,
+        "features": {
+          "Year": 1986.0,
+          "Month": 6.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 1.0,
+        "predicted_linear": 0.9493800904812209,
+        "predicted_rf": 2.0477985659344133,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 2,
+        "features": {
+          "Year": 1984.0,
+          "Month": 12.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 2.0,
+        "predicted_linear": 1.2631216706712545,
+        "predicted_rf": 2.8232880058793963,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 3,
+        "features": {
+          "Year": 1984.0,
+          "Month": 4.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 9.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 0.557141621311978,
+        "predicted_rf": 1.11418062643297,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 4,
+        "features": {
+          "Year": 1993.0,
+          "Month": 2.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 1.165130673068546,
+        "predicted_rf": 0.3418033092304046,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 6,
+        "features": {
+          "Year": 1995.0,
+          "Month": 9.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 0.9731664324849354,
+        "predicted_rf": 1.3540103821696057,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 7,
+        "features": {
+          "Year": 1991.0,
+          "Month": 8.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 0.6701622394277791,
+        "predicted_rf": 1.3490052653107518,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 8,
+        "features": {
+          "Year": 1998.0,
+          "Month": 12.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 4.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 9.0,
+          "Engine Type_encoded": 4.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 8.520681624963874,
+        "predicted_rf": 1.678108953374333,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 9,
+        "features": {
+          "Year": 1996.0,
+          "Month": 10.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 4.0,
+        "predicted_linear": 3.7547321369121875,
+        "predicted_rf": 2.3544377970823276,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 11,
+        "features": {
+          "Year": 1984.0,
+          "Month": 7.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 2.0,
+        "predicted_linear": 0.8476826979654946,
+        "predicted_rf": 1.242781228185776,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 13,
+        "features": {
+          "Year": 1996.0,
+          "Month": 5.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 3.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 6.197498316128862,
+        "predicted_rf": 1.2126097055655438,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 14,
+        "features": {
+          "Year": 1986.0,
+          "Month": 5.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 1.401515255082936,
+        "predicted_rf": 1.4966352934149882,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 16,
+        "features": {
+          "Year": 1999.0,
+          "Month": 5.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 4.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 1.0,
+        "predicted_linear": 1.556685983939135,
+        "predicted_rf": 1.6715538965361132,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 17,
+        "features": {
+          "Year": 1994.0,
+          "Month": 8.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 1.3020349530195183,
+        "predicted_rf": 0.3377823065971217,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 19,
+        "features": {
+          "Year": 1983.0,
+          "Month": 4.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 3.1514822883192615,
+        "predicted_rf": 2.638336546637602,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 20,
+        "features": {
+          "Year": 1990.0,
+          "Month": 6.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 2.0,
+        "predicted_linear": 1.9266620442420064,
+        "predicted_rf": 1.8922195744789498,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 21,
+        "features": {
+          "Year": 1989.0,
+          "Month": 7.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 0.6744288047760496,
+        "predicted_rf": 1.334332522518741,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 23,
+        "features": {
+          "Year": 1984.0,
+          "Month": 9.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.7309567800687435,
+        "predicted_rf": 1.7735942989860565,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 24,
+        "features": {
+          "Year": 1982.0,
+          "Month": 12.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 1.2300117208245773,
+        "predicted_rf": 1.4640356346398957,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 25,
+        "features": {
+          "Year": 2001.0,
+          "Month": 6.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 1.3910142927601123,
+        "predicted_rf": 0.4101761533209698,
+        "severity_category": "Non-Fatal"
+      },
+      {
+        "index": 26,
+        "features": {
+          "Year": 1999.0,
+          "Month": 9.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 1.0,
+        "predicted_linear": 1.1018081871264929,
+        "predicted_rf": 1.6785022371114315,
+        "severity_category": "Non-Fatal"
+      }
+    ],
+    "Fatal(1)": [
+      {
+        "index": 0,
+        "features": {
+          "Year": 2003.0,
+          "Month": 6.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.2123852889962425,
+        "predicted_rf": 0.34042525733481116,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 5,
+        "features": {
+          "Year": 1991.0,
+          "Month": 8.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 5.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.4684686107672125,
+        "predicted_rf": 1.544385383613522,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 18,
+        "features": {
+          "Year": 1991.0,
+          "Month": 9.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.056263631453925,
+        "predicted_rf": 2.2082386267508887,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 39,
+        "features": {
+          "Year": 2002.0,
+          "Month": 7.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 5.0,
+        "predicted_linear": 0.7584584208697192,
+        "predicted_rf": 1.3291400592118598,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 40,
+        "features": {
+          "Year": 1983.0,
+          "Month": 5.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 5.0,
+        "predicted_linear": 0.7401159986941361,
+        "predicted_rf": 1.2456822563975356,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 42,
+        "features": {
+          "Year": 1988.0,
+          "Month": 11.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 8.117421724877673,
+        "predicted_rf": 5.157929113882591,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 53,
+        "features": {
+          "Year": 1996.0,
+          "Month": 12.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.850382245715106,
+        "predicted_rf": 1.7706689380104146,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 64,
+        "features": {
+          "Year": 1997.0,
+          "Month": 3.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 0.9319012761766108,
+        "predicted_rf": 2.2870150434204124,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 89,
+        "features": {
+          "Year": 1990.0,
+          "Month": 12.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 8.35610504061405,
+        "predicted_rf": 5.442386213024417,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 101,
+        "features": {
+          "Year": 1992.0,
+          "Month": 11.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.195041258199385,
+        "predicted_rf": 1.6466686400071981,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 106,
+        "features": {
+          "Year": 1986.0,
+          "Month": 12.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.9539401510093475,
+        "predicted_rf": 1.588864819344331,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 116,
+        "features": {
+          "Year": 1996.0,
+          "Month": 8.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 5.0,
+        "predicted_linear": 1.1338095917470157,
+        "predicted_rf": 2.027236354176981,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 135,
+        "features": {
+          "Year": 1992.0,
+          "Month": 12.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 6.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 2.3920924006180377,
+        "predicted_rf": 2.7934179052847967,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 149,
+        "features": {
+          "Year": 1994.0,
+          "Month": 6.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.0851886592220112,
+        "predicted_rf": 2.0533082186570537,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 160,
+        "features": {
+          "Year": 1982.0,
+          "Month": 2.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.2964234176350398,
+        "predicted_rf": 3.788551998704806,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 184,
+        "features": {
+          "Year": 2003.0,
+          "Month": 11.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.5479638911251472,
+        "predicted_rf": 2.946225062458783,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 194,
+        "features": {
+          "Year": 2003.0,
+          "Month": 6.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 6.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 5.742340373785272,
+        "predicted_rf": 4.902804762262177,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 211,
+        "features": {
+          "Year": 1998.0,
+          "Month": 10.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.9703332531200863,
+        "predicted_rf": 1.7732625211222777,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 215,
+        "features": {
+          "Year": 1997.0,
+          "Month": 3.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 3.0,
+        "predicted_linear": 1.0533762167189349,
+        "predicted_rf": 2.455218732161059,
+        "severity_category": "Fatal(1)"
+      },
+      {
+        "index": 234,
+        "features": {
+          "Year": 1982.0,
+          "Month": 10.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 5.0,
+        "predicted_linear": 1.5077844470106931,
+        "predicted_rf": 0.45224580997438374,
+        "severity_category": "Fatal(1)"
+      }
+    ],
+    "Fatal(2)": [
+      {
+        "index": 12,
+        "features": {
+          "Year": 1997.0,
+          "Month": 5.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.8255790007712274,
+        "predicted_rf": 1.8770490630966634,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 15,
+        "features": {
+          "Year": 1999.0,
+          "Month": 5.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 0.5865708442775823,
+        "predicted_rf": 1.3355480223887195,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 22,
+        "features": {
+          "Year": 2006.0,
+          "Month": 2.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 4.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.1676155339083194,
+        "predicted_rf": 1.642614836658126,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 31,
+        "features": {
+          "Year": 1991.0,
+          "Month": 2.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 5.142625381805794,
+        "predicted_rf": 4.608417509937712,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 37,
+        "features": {
+          "Year": 2003.0,
+          "Month": 10.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.373601452709548,
+        "predicted_rf": 2.7748257341243323,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 47,
+        "features": {
+          "Year": 2003.0,
+          "Month": 8.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 10.0,
+        "predicted_linear": 7.501419406637716,
+        "predicted_rf": 5.603213690617253,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 71,
+        "features": {
+          "Year": 1989.0,
+          "Month": 1.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 5.207629417425227,
+        "predicted_rf": 4.873101664736079,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 80,
+        "features": {
+          "Year": 1992.0,
+          "Month": 1.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.2614529550098474,
+        "predicted_rf": 1.723924742797236,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 86,
+        "features": {
+          "Year": 1989.0,
+          "Month": 6.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 0.9252286582585849,
+        "predicted_rf": 1.6586087740870041,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 90,
+        "features": {
+          "Year": 1986.0,
+          "Month": 2.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 0.7083035561910602,
+        "predicted_rf": 1.6121174262266607,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 97,
+        "features": {
+          "Year": 1984.0,
+          "Month": 3.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 5.243708425276573,
+        "predicted_rf": 4.635093302848235,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 107,
+        "features": {
+          "Year": 1999.0,
+          "Month": 8.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.382134583406089,
+        "predicted_rf": 2.5448285961937063,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 124,
+        "features": {
+          "Year": 2004.0,
+          "Month": 3.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 4.380491930431502,
+        "predicted_rf": 3.7872065724803723,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 127,
+        "features": {
+          "Year": 1987.0,
+          "Month": 7.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 5.077085805411432,
+        "predicted_rf": 3.9980431952454434,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 147,
+        "features": {
+          "Year": 1993.0,
+          "Month": 12.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.4614594132080152,
+        "predicted_rf": 2.646137319207936,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 172,
+        "features": {
+          "Year": 2001.0,
+          "Month": 11.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.796049622974505,
+        "predicted_rf": 2.16429193344802,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 198,
+        "features": {
+          "Year": 2001.0,
+          "Month": 12.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 10.0,
+        "predicted_linear": 1.021104206711286,
+        "predicted_rf": 1.3546418843448018,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 203,
+        "features": {
+          "Year": 1984.0,
+          "Month": 12.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.2631216706712545,
+        "predicted_rf": 2.8232880058793963,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 224,
+        "features": {
+          "Year": 1985.0,
+          "Month": 11.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 5.7293375820587435,
+        "predicted_rf": 5.415682672269844,
+        "severity_category": "Fatal(2)"
+      },
+      {
+        "index": 231,
+        "features": {
+          "Year": 1986.0,
+          "Month": 3.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 6.0,
+        "predicted_linear": 1.094404948217206,
+        "predicted_rf": 2.8918262204618417,
+        "severity_category": "Fatal(2)"
+      }
+    ],
+    "Incident": [
+      {
+        "index": 35,
+        "features": {
+          "Year": 2004.0,
+          "Month": 1.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 7.366104797783307,
+        "predicted_rf": 1.1684771727301535,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 44,
+        "features": {
+          "Year": 1999.0,
+          "Month": 10.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 2.093599897187219,
+        "predicted_rf": 1.9489167372197003,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 56,
+        "features": {
+          "Year": 1988.0,
+          "Month": 12.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 1.0,
+        "predicted_linear": 1.563572193634931,
+        "predicted_rf": 0.4095915630558224,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 62,
+        "features": {
+          "Year": 1992.0,
+          "Month": 3.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 0.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 9.259141167651887,
+        "predicted_rf": 0.3676653904388164,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 104,
+        "features": {
+          "Year": 2000.0,
+          "Month": 10.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 3.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 4.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 6.9035441034473575,
+        "predicted_rf": 1.854539705642248,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 117,
+        "features": {
+          "Year": 1989.0,
+          "Month": 3.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 3.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 2.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 8.054114989865035,
+        "predicted_rf": 9.80081493968648,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 140,
+        "features": {
+          "Year": 2000.0,
+          "Month": 3.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 9.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 3.6669671427380983,
+        "predicted_rf": 2.5240656084439475,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 153,
+        "features": {
+          "Year": 1997.0,
+          "Month": 9.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 4.319170368949242,
+        "predicted_rf": 2.6033353095762366,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 176,
+        "features": {
+          "Year": 1989.0,
+          "Month": 1.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 4.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 8.438780055741358,
+        "predicted_rf": 3.8387097528270435,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 299,
+        "features": {
+          "Year": 1995.0,
+          "Month": 8.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 1.8695867892904787,
+        "predicted_rf": 2.5090504991088176,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 324,
+        "features": {
+          "Year": 1996.0,
+          "Month": 11.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 1.0,
+        "predicted_linear": 4.849995755490398,
+        "predicted_rf": 3.3973923837802773,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 337,
+        "features": {
+          "Year": 1990.0,
+          "Month": 3.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 4.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 3.112256583400497,
+        "predicted_rf": 2.532826361041605,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 338,
+        "features": {
+          "Year": 1994.0,
+          "Month": 5.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 3.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 5.628154776333093,
+        "predicted_rf": 2.1050646752581814,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 361,
+        "features": {
+          "Year": 1984.0,
+          "Month": 1.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 4.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 3.6222289695224124,
+        "predicted_rf": 0.9710281931514436,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 380,
+        "features": {
+          "Year": 1983.0,
+          "Month": 3.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 3.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 9.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 5.674479810135771,
+        "predicted_rf": 2.714649807537617,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 389,
+        "features": {
+          "Year": 2000.0,
+          "Month": 8.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 4.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 7.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 8.871435717873496,
+        "predicted_rf": 8.641708354452405,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 427,
+        "features": {
+          "Year": 2003.0,
+          "Month": 8.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 4.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 8.024246508089945,
+        "predicted_rf": 5.741083213294018,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 447,
+        "features": {
+          "Year": 1987.0,
+          "Month": 7.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 6.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 4.067523876159664,
+        "predicted_rf": 0.8478612411636659,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 486,
+        "features": {
+          "Year": 1990.0,
+          "Month": 11.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 4.0,
+          "Engine Type_encoded": 4.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 4.505471706048251,
+        "predicted_rf": 4.9946510565997615,
+        "severity_category": "Incident"
+      },
+      {
+        "index": 495,
+        "features": {
+          "Year": 1991.0,
+          "Month": 1.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 0.0,
+        "predicted_linear": 3.2084887340170827,
+        "predicted_rf": 0.19547571410682896,
+        "severity_category": "Incident"
+      }
+    ],
+    "Fatal(3)": [
+      {
+        "index": 73,
+        "features": {
+          "Year": 1997.0,
+          "Month": 10.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 1.6249240129510398,
+        "predicted_rf": 1.6492633527449114,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 201,
+        "features": {
+          "Year": 2004.0,
+          "Month": 9.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 13.0,
+        "predicted_linear": 1.5238409694802608,
+        "predicted_rf": 1.5870717166200747,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 207,
+        "features": {
+          "Year": 1983.0,
+          "Month": 8.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 5.20266685976233,
+        "predicted_rf": 4.704866288439157,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 246,
+        "features": {
+          "Year": 1992.0,
+          "Month": 11.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 5.115381903715088,
+        "predicted_rf": 4.593265430839721,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 557,
+        "features": {
+          "Year": 1984.0,
+          "Month": 4.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 4.152915674302683,
+        "predicted_rf": 2.623362082866844,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 647,
+        "features": {
+          "Year": 1984.0,
+          "Month": 8.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 5.508145914642949,
+        "predicted_rf": 4.7329841275364135,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 672,
+        "features": {
+          "Year": 2007.0,
+          "Month": 2.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 53.0,
+          "Weather Condition_encoded": 0.0,
+          "Broad Phase of Flight_encoded": 0.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 11.290495799414892,
+        "predicted_rf": 6.889976708094572,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 686,
+        "features": {
+          "Year": 1997.0,
+          "Month": 10.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 5.071452923465854,
+        "predicted_rf": 4.592432648072398,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 712,
+        "features": {
+          "Year": 2004.0,
+          "Month": 7.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 4.236340940367716,
+        "predicted_rf": 3.1679295337701405,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1019,
+        "features": {
+          "Year": 1982.0,
+          "Month": 12.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 5.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 13.0,
+        "predicted_linear": 5.311757492171031,
+        "predicted_rf": 4.467983533404885,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1107,
+        "features": {
+          "Year": 1983.0,
+          "Month": 2.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 5.300100521929447,
+        "predicted_rf": 4.726642156803072,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1127,
+        "features": {
+          "Year": 2003.0,
+          "Month": 11.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 1.4264889505828229,
+        "predicted_rf": 2.8209130820211317,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1207,
+        "features": {
+          "Year": 1986.0,
+          "Month": 11.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 1.1530801095764338,
+        "predicted_rf": 2.6738861434855976,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1525,
+        "features": {
+          "Year": 1987.0,
+          "Month": 2.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 4.812648316045057,
+        "predicted_rf": 3.659239249205452,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1538,
+        "features": {
+          "Year": 2003.0,
+          "Month": 4.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 1.1170139357410598,
+        "predicted_rf": 2.4845649248338733,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1551,
+        "features": {
+          "Year": 1994.0,
+          "Month": 3.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 5.140150519982331,
+        "predicted_rf": 4.5242209591442055,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1608,
+        "features": {
+          "Year": 1992.0,
+          "Month": 1.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 7.3128334938710795,
+        "predicted_rf": 5.731398295221039,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1611,
+        "features": {
+          "Year": 2007.0,
+          "Month": 6.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 2.029941919347556,
+        "predicted_rf": 2.004372317034193,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1654,
+        "features": {
+          "Year": 1982.0,
+          "Month": 9.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 12.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 9.0,
+        "predicted_linear": 0.5455192797470276,
+        "predicted_rf": 4.050772294443686,
+        "severity_category": "Fatal(3)"
+      },
+      {
+        "index": 1681,
+        "features": {
+          "Year": 2005.0,
+          "Month": 2.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 11.0,
+        "predicted_linear": 5.046234290610785,
+        "predicted_rf": 4.508507280858079,
+        "severity_category": "Fatal(3)"
+      }
+    ],
+    "Fatal(5)": [
+      {
+        "index": 28,
+        "features": {
+          "Year": 2003.0,
+          "Month": 10.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 4.0999280215982905,
+        "predicted_rf": 3.198529842724211,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 665,
+        "features": {
+          "Year": 1993.0,
+          "Month": 12.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 4.531963452881422,
+        "predicted_rf": 9.75339348323377,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 739,
+        "features": {
+          "Year": 1982.0,
+          "Month": 5.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 5.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 7.466536264827669,
+        "predicted_rf": 5.0749771850622984,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 1113,
+        "features": {
+          "Year": 1995.0,
+          "Month": 4.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 0.7087289431185604,
+        "predicted_rf": 1.3499442768723922,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 1740,
+        "features": {
+          "Year": 1995.0,
+          "Month": 11.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 29.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 0.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 13.039424178383001,
+        "predicted_rf": 17.388148695489907,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 1758,
+        "features": {
+          "Year": 1985.0,
+          "Month": 4.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 1.589785934769501,
+        "predicted_rf": 1.5705824848766086,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 2191,
+        "features": {
+          "Year": 1983.0,
+          "Month": 1.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 7.3470419899276,
+        "predicted_rf": 6.444973749586938,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 2398,
+        "features": {
+          "Year": 1997.0,
+          "Month": 5.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 1.2198886827366473,
+        "predicted_rf": 2.859151493343972,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 2442,
+        "features": {
+          "Year": 1982.0,
+          "Month": 10.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 3.8609669364581367,
+        "predicted_rf": 8.550555654839833,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 2770,
+        "features": {
+          "Year": 1996.0,
+          "Month": 1.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 12.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 0.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 17.0,
+        "predicted_linear": 11.047936198210415,
+        "predicted_rf": 17.10494028381615,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 2969,
+        "features": {
+          "Year": 1983.0,
+          "Month": 11.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 4.887517618381266,
+        "predicted_rf": 4.160837488653578,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 3245,
+        "features": {
+          "Year": 2007.0,
+          "Month": 7.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 23.0,
+        "predicted_linear": 3.887694871806536,
+        "predicted_rf": 2.5174680528052162,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 3610,
+        "features": {
+          "Year": 1998.0,
+          "Month": 4.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 4.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 4.310997974964543,
+        "predicted_rf": 3.7676618523199825,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 3613,
+        "features": {
+          "Year": 2000.0,
+          "Month": 4.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 5.264525709275619,
+        "predicted_rf": 4.543401728973473,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 3707,
+        "features": {
+          "Year": 2000.0,
+          "Month": 9.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 25.0,
+        "predicted_linear": 3.9530812025036473,
+        "predicted_rf": 1.9913313587121502,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 4003,
+        "features": {
+          "Year": 1982.0,
+          "Month": 11.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 1.328125706290687,
+        "predicted_rf": 2.791813877315536,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 4035,
+        "features": {
+          "Year": 1983.0,
+          "Month": 2.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 2.924232352030388,
+        "predicted_rf": 2.646597971432856,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 4160,
+        "features": {
+          "Year": 1994.0,
+          "Month": 2.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 17.0,
+        "predicted_linear": 5.4916180290244565,
+        "predicted_rf": 4.524360918511487,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 4484,
+        "features": {
+          "Year": 1983.0,
+          "Month": 3.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 7.92831310535208,
+        "predicted_rf": 5.137765854725233,
+        "severity_category": "Fatal(5)"
+      },
+      {
+        "index": 4626,
+        "features": {
+          "Year": 1984.0,
+          "Month": 3.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 2.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 15.0,
+        "predicted_linear": 3.298301373917252,
+        "predicted_rf": 4.669107947339146,
+        "severity_category": "Fatal(5)"
+      }
+    ],
+    "Fatal(6)": [
+      {
+        "index": 523,
+        "features": {
+          "Year": 1995.0,
+          "Month": 7.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 1.2006053308912565,
+        "predicted_rf": 2.060631758775431,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 751,
+        "features": {
+          "Year": 1998.0,
+          "Month": 6.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 6.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 5.7941193264323925,
+        "predicted_rf": 4.829842026373191,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 1775,
+        "features": {
+          "Year": 1984.0,
+          "Month": 3.0,
+          "DayOfWeek": 0.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 2.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 3.055351492832604,
+        "predicted_rf": 4.632153401209035,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 1835,
+        "features": {
+          "Year": 1983.0,
+          "Month": 11.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 4.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 4.248860032009091,
+        "predicted_rf": 4.456480398245127,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 1871,
+        "features": {
+          "Year": 2000.0,
+          "Month": 5.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 3.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 4.174292892442155,
+        "predicted_rf": 5.871873936907224,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 2425,
+        "features": {
+          "Year": 1991.0,
+          "Month": 1.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 6.77649258507422,
+        "predicted_rf": 3.9916507741998926,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 2523,
+        "features": {
+          "Year": 1987.0,
+          "Month": 1.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 3.6456071121216773,
+        "predicted_rf": 3.069974097201184,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 2640,
+        "features": {
+          "Year": 1993.0,
+          "Month": 3.0,
+          "DayOfWeek": 1.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 12.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 2.651419348507507,
+        "predicted_rf": 4.563847755403102,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 3620,
+        "features": {
+          "Year": 1989.0,
+          "Month": 12.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 8.071433270716167,
+        "predicted_rf": 5.40174379440028,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 4268,
+        "features": {
+          "Year": 1992.0,
+          "Month": 6.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 4.345845213431508,
+        "predicted_rf": 3.2978086037390995,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 5038,
+        "features": {
+          "Year": 1995.0,
+          "Month": 12.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 8.132517319644812,
+        "predicted_rf": 5.1716543677857825,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 5072,
+        "features": {
+          "Year": 1987.0,
+          "Month": 12.0,
+          "DayOfWeek": 2.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 10.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 24.0,
+        "predicted_linear": 3.399536674591209,
+        "predicted_rf": 2.570753881237019,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 5319,
+        "features": {
+          "Year": 1985.0,
+          "Month": 4.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 2.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 2.9086953831115077,
+        "predicted_rf": 3.9884869869726236,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 5569,
+        "features": {
+          "Year": 1986.0,
+          "Month": 8.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 1.176630026770095,
+        "predicted_rf": 2.0757320515685023,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 6105,
+        "features": {
+          "Year": 1982.0,
+          "Month": 6.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 1.0,
+          "Broad Phase of Flight_encoded": 7.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 4.8330273791006295,
+        "predicted_rf": 4.494200672074294,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 6655,
+        "features": {
+          "Year": 1982.0,
+          "Month": 7.0,
+          "DayOfWeek": 3.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 1.5608609070014148,
+        "predicted_rf": 1.7317671952218134,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 7891,
+        "features": {
+          "Year": 1983.0,
+          "Month": 4.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 6.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 1.1315136930246892,
+        "predicted_rf": 0.2855587274255698,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 9311,
+        "features": {
+          "Year": 1993.0,
+          "Month": 7.0,
+          "DayOfWeek": 6.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 1.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 4.388440969916944,
+        "predicted_rf": 2.8479682096479273,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 9644,
+        "features": {
+          "Year": 1992.0,
+          "Month": 9.0,
+          "DayOfWeek": 4.0,
+          "Number of Engines": 2.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 3.0,
+          "Broad Phase of Flight_encoded": 2.0,
+          "Engine Type_encoded": 5.0
+        },
+        "actual": 22.0,
+        "predicted_linear": 4.625982647593657,
+        "predicted_rf": 4.586753164904358,
+        "severity_category": "Fatal(6)"
+      },
+      {
+        "index": 9842,
+        "features": {
+          "Year": 1982.0,
+          "Month": 3.0,
+          "DayOfWeek": 5.0,
+          "Number of Engines": 1.0,
+          "Country_encoded": 159.0,
+          "Weather Condition_encoded": 2.0,
+          "Broad Phase of Flight_encoded": 3.0,
+          "Engine Type_encoded": 2.0
+        },
+        "actual": 18.0,
+        "predicted_linear": 3.3554554371387977,
+        "predicted_rf": 4.804093552472764,
+        "severity_category": "Fatal(6)"
+      }
+    ]
+  }
+}

@@ -66,5 +66,11 @@ export const apiService = {
   getTargetDistributions: async () => {
     const response = await fetch(`${API_BASE_URL}/api/target-distributions`);
     return response.json();
+  },
+
+  // Get prediction samples with features
+  getPredictionSamples: async () => {
+    const response = await fetch(`${API_BASE_URL}/api/prediction-samples`);
+    return response.json();
   }
 };

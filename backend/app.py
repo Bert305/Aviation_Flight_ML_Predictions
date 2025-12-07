@@ -364,6 +364,26 @@ def get_plot(plot_name):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/prediction-samples')
+def prediction_samples():
+    """Get prediction samples with input features and outputs, grouped by severity"""
+    try:
+        import json
+        
+        samples_path = 'models/prediction_samples.json'
+        if os.path.exists(samples_path):
+            with open(samples_path, 'r') as f:
+                data = json.load(f)
+            
+            return jsonify(data)
+        else:
+            return jsonify({
+                'error': 'Prediction samples not found',
+                'message': 'Run train_models.py to generate prediction samples'
+            }), 404
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 if __name__ == '__main__':
     print("Starting Aviation ML API...")
     print("Loading datasets...")

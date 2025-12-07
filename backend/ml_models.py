@@ -150,8 +150,8 @@ class AviationMLModels:
             if col in data.columns:
                 feature_columns.append(col)
         
-        # Filter valid data
-        data = data.dropna(subset=feature_columns + ['Severity_Score'])
+        # Filter valid data - keep Injury Severity for grouping later
+        data = data.dropna(subset=feature_columns + ['Severity_Score', 'Injury Severity'])
         
         # Ensure Number of Engines is numeric
         data['Number of Engines'] = pd.to_numeric(data['Number of Engines'], errors='coerce')
@@ -168,10 +168,11 @@ class AviationMLModels:
         # Prepare X and y - convert to numeric array
         X = data[feature_columns].astype(float).values
         y = data['Severity_Score'].astype(float).values
+        severity_labels = data['Injury Severity'].values  # Keep severity labels
         
         # Split data
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=0.2, random_state=42
+        X_train, X_test, y_train, y_test, _, severity_test = train_test_split(
+            X, y, severity_labels, test_size=0.2, random_state=42
         )
         
         # Scale features
@@ -197,6 +198,9 @@ class AviationMLModels:
         print(f"Linear Regression RMSE: {rmse_linear:.4f}")
         print(f"Random Forest RMSE: {rmse_rf:.4f}")
         
+        # Get feature names for interpretation
+        feature_names = feature_columns
+        
         return {
             'linear_regression_rmse': rmse_linear,
             'random_forest_rmse': rmse_rf,
@@ -205,7 +209,9 @@ class AviationMLModels:
             'X_test': X_test,
             'y_test': y_test,
             'y_pred_linear': y_pred_linear,
-            'y_pred_rf': y_pred_rf
+            'y_pred_rf': y_pred_rf,
+            'feature_names': feature_names,
+            'severity_test': severity_test  # Add severity labels for test data
         }
     
     def predict(self, input_data):

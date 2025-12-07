@@ -154,6 +154,49 @@ def main():
     y_test = regressor_results.get('y_test') if regressor_results else None
     y_pred_linear = regressor_results.get('y_pred_linear') if regressor_results else None
     y_pred_rf = regressor_results.get('y_pred_rf') if regressor_results else None
+    feature_names = regressor_results.get('feature_names') if regressor_results else []
+    severity_test = regressor_results.get('severity_test') if regressor_results else None  # Get severity labels
+    
+    # Save prediction data for API access - grouped by severity category
+    if X_test is not None and y_test is not None and severity_test is not None:
+        # Group by severity category and collect samples
+        severity_groups = {}
+        target_categories = ['Non-Fatal', 'Fatal(1)', 'Fatal(2)', 'Incident', 'Fatal(3)', 'Fatal(5)', 'Fatal(6)']
+        samples_per_category = 20
+        
+        for test_idx in range(len(severity_test)):
+            severity = severity_test[test_idx].strip()  # Strip whitespace
+            
+            if severity not in severity_groups:
+                severity_groups[severity] = []
+            
+            if len(severity_groups[severity]) < samples_per_category:
+                sample = {
+                    'index': test_idx,
+                    'features': {feature_names[j]: float(X_test[test_idx][j]) for j in range(len(feature_names))},
+                    'actual': float(y_test[test_idx]),
+                    'predicted_linear': float(y_pred_linear[test_idx]),
+                    'predicted_rf': float(y_pred_rf[test_idx]),
+                    'severity_category': severity
+                }
+                severity_groups[severity].append(sample)
+        
+        # Structure data by category
+        prediction_data = {
+            'feature_names': feature_names,
+            'categories': {}
+        }
+        
+        for category in target_categories:
+            if category in severity_groups:
+                prediction_data['categories'][category] = severity_groups[category]
+        
+        # Save to JSON file
+        os.makedirs('models', exist_ok=True)
+        with open('models/prediction_samples.json', 'w') as f:
+            json.dump(prediction_data, f, indent=2)
+        print("Saved prediction samples data grouped by severity category")
+
     
     if regressor_results:
         print("\nTop 5 Important Features:")
