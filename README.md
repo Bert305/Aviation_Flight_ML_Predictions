@@ -56,9 +56,6 @@ cp .env.example .env
 5. Add your API keys to `.env`:
 ```
 AVIATIONSTACK_API_KEY=your_key_here
-WEATHER_API_KEY=your_key_here
-TAVILY_API_KEY=your_key_here
-OPENAI_API_KEY=your_key_here
 ```
 
 ### Frontend Setup
