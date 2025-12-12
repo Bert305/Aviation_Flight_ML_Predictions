@@ -42,14 +42,16 @@ A fullstack machine learning application for analyzing aviation safety data and 
 
 ### Backend Setup
 
-1. Navigate to the backend directory:
-```bash
-cd backend
-```
 
-2. Activate virtual environment:
+
+1. Activate virtual environment:
 ```bash
 .venv\Scripts\Activate.ps1
+```
+
+2. Navigate to the backend directory:
+```bash
+cd backend
 ```
 
 3. Install dependencies:
@@ -65,7 +67,6 @@ cp .env.example .env
 5. Add your API keys to `.env`:
 ```
 AVIATIONSTACK_API_KEY=your_aviationstack_key_here
-OPENAI_API_KEY=your_openai_key_here
 ```
 
 > **Note**: The `.env` file is automatically excluded from version control via `.gitignore` to protect your API keys.
@@ -108,8 +109,8 @@ The React app will run on `http://localhost:3000`
 To train the machine learning models:
 
 ```bash
+.venv\Scripts\Activate.
 cd backend
-.venv\Scripts\Activate.ps1
 python train_models.py
 ```
 
@@ -239,9 +240,6 @@ Aviation_Flight_ML_Predictions/
 
 The project is structured to integrate with:
 - **AviationStack API**: ✅ **INTEGRATED** - Real-time flight data for live predictions
-- **OpenAI API**: Ready for natural language insights and enhanced analysis
-- **Weather API**: Ready for weather conditions integration
-- **Tavily API**: Ready for aviation news and context
 
 ## ✨ Recent Updates
 
