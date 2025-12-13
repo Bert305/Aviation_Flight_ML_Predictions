@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { apiService } from '../services/api';
 
+// Get API base URL (same logic as api.js)
+const API_BASE_URL = process.env.REACT_APP_API_URL || 
+                     (window.location.hostname === 'localhost' 
+                       ? 'http://localhost:5000' 
+                       : 'https://aviation-flight-ml-predictions.onrender.com');
+
 function Visualizations() {
   const [yearlyData, setYearlyData] = useState([]);
   const [airlineData, setAirlineData] = useState([]);
@@ -50,7 +56,7 @@ function Visualizations() {
   };
 
   const downloadPlot = (plotName, filename) => {
-    window.open(`http://localhost:5000/api/plots/${plotName}`, '_blank');
+    window.open(`${API_BASE_URL}/api/plots/${plotName}`, '_blank');
   };
 
   const loadPredictionSamples = async () => {
