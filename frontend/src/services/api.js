@@ -1,4 +1,8 @@
-const API_BASE_URL = 'http://localhost:5000';
+// Automatically detect whether to use local or production API
+const API_BASE_URL = process.env.REACT_APP_API_URL || 
+                     (window.location.hostname === 'localhost' 
+                       ? 'http://localhost:5000' 
+                       : 'https://aviation-flight-ml-predictions.onrender.com');
 
 export const apiService = {
   // Health check
