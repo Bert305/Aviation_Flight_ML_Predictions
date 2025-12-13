@@ -5,7 +5,7 @@ import { apiService } from '../services/api';
 const API_BASE_URL = process.env.REACT_APP_API_URL || 
                      (window.location.hostname === 'localhost' 
                        ? 'http://localhost:5000' 
-                       : 'https://aviation-flight-ml-predictions.onrender.com');
+                       : 'https://aviation-flight-ml-predictions.onrender.com'); //should work
 
 function Visualizations() {
   const [yearlyData, setYearlyData] = useState([]);
