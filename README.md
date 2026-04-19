@@ -45,6 +45,11 @@ A fullstack machine learning application for analyzing aviation safety data and 
 
 
 1. Activate virtual environment:
+
+```bash
+python -m venv .venv
+```
+
 ```bash
 .venv\Scripts\Activate.ps1
 ```
