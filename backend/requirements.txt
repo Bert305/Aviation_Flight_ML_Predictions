@@ -2,9 +2,9 @@ flask==3.1.2
 flask-cors==5.0.0
 pandas==2.3.3
 numpy==2.3.5
-scikit-learn==1.6.0
-matplotlib==3.9.3
+scikit-learn>=1.6
+matplotlib>=3.9
 seaborn==0.13.2
 requests==2.32.3
 python-dotenv==1.0.1
-gunicorn==21.2.0
+# gunicorn is Linux/macOS only — omit on Windows
